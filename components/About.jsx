@@ -14,7 +14,7 @@ const About = () => {
             <div className="mx-auto sm:scale-[120%] md:scale-[180%] lg:scale-[200%]">
               <Image
                 className="rounded-full "
-                src="/../public/images/man-1.jpg"
+                src={"/../public/images/man-1.jpg"}
                 alt="man"
                 width="180px"
                 height="180px"
