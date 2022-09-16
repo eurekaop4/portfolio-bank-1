@@ -2,7 +2,14 @@ import React from "react";
 import Image from "next/image";
 import SkillItem from "./SkillItem";
 
-import html5 from "../public/assets/skills/html.png";
+import htmlImg from "../public/assets/skills/html.png";
+import cssImg from "../public/assets/skills/css.png";
+import javaScriptImg from "../public/assets/skills/javascript.png";
+import reactImg from "../public/assets/skills/react.png";
+import tailwindImg from "../public/assets/skills/tailwind.png";
+import nodeImg from "../public/assets/skills/nodejs.png";
+import firebaseImg from "../public/assets/skills/firebase.png";
+import githubImg from "../public/assets/skills//github.png";
 
 const Skills = () => {
   return (
@@ -16,141 +23,16 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/html.png"
-                    alt="html"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">HTML</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/css.png"
-                    alt="CSS"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">CSS</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/javascript.png"
-                    alt="Java Script"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">Java Script</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/react.png"
-                    alt="React"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">React JS</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/tailwind.png"
-                    alt="Tailwind"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">Tailwind</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/nodejs.png"
-                    alt="Node"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">Node Js</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/firebase.png"
-                    alt="firebase"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">Firebase</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image
-                    src="/../public/assets/skills/github.png"
-                    alt="github"
-                    width="72px"
-                    height="72px"
-                  />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-xl ">Github</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <SkillItem skillImg={html5} skillName="html555" />
-            </div>
-
-
-
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
+          <div className="flex flex-wrap justify-center">
+            <SkillItem skillImg={htmlImg} skillName="HTML" />
+            <SkillItem skillImg={cssImg} skillName="CSS" />
+            <SkillItem skillImg={javaScriptImg} skillName="Java Script" />
+            <SkillItem skillImg={reactImg} skillName="React JS" />
+            <SkillItem skillImg={tailwindImg} skillName="Tailwind CSS" />
+            <SkillItem skillImg={nodeImg} skillName="Node JS" />
+            <SkillItem skillImg={firebaseImg} skillName="Firebase" />
+            <SkillItem skillImg={githubImg} skillName="Github" />
           </div>
         </div>
       </div>
