@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import SkillItem from "./SkillItem";
+
+import html5 from "../public/assets/skills/html.png";
 
 const Skills = () => {
   return (
@@ -14,7 +17,6 @@ const Skills = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
-
             <div className="rounded-xl p-6 shadow-lg shadow-red-600 hover:scale-105 ease-in duration-150">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
@@ -142,6 +144,13 @@ const Skills = () => {
                 </div>
               </div>
             </div>
+
+            <div>
+              <SkillItem skillImg={html5} skillName="html555" />
+            </div>
+
+
+
           </div>
         </div>
       </div>

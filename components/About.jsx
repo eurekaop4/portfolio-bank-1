@@ -4,6 +4,9 @@ import React from "react";
 import { AboutData } from "./AboutData";
 import SocialMedia from "./SocialMedia";
 
+// import AboutMePic from "/../public/images/man-1.jpg";
+
+
 const About = () => {
   return (
     <>
