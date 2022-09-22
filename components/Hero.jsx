@@ -1,13 +1,19 @@
 import React from "react";
-import Avatar from "./Avatar";
+import Profile from "./Profile";
+
+import bank1 from "../public/assets/man/p1-3.jpg";
 
 const Hero = () => {
   return (
     <>
       <div className="w-full h-screen flex flex-col justify-center items-center text-red-600">
-        {/* Avatar */}
-        <div className="sm:scale-110 md:scale-125">
-          <Avatar />
+        {/* Profile Picture */}
+        <div className="sm:scale-110 md:scale-125 lg:scale-150">
+          <div className="bg-red-600 p-4 rounded-full">
+            <div className="rounded-full overflow-hidden w-[200px] h-[200px]">
+              <Profile profileImg={bank1} profileAlt={"bank1"} />
+            </div>
+          </div>
         </div>
 
         <div className="text-center mt-4 sm:mt-12 md:mt-16">

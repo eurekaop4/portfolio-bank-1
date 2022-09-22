@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 import { AboutData } from "./AboutData";
+import Profile from "./Profile";
 import SocialMedia from "./SocialMedia";
 
 // import AboutMePic from "/../public/images/man-1.jpg";
-
+import bank1 from "../public/assets/man/p2-3.png";
 
 const About = () => {
   return (
@@ -14,16 +15,17 @@ const About = () => {
         <div className="w-full max-w-[1240px] h-full p-8 flex flex-col justify-evenly items-center sm:grid grid-cols-2 sm:mx-auto ">
           {/* Left Container*/}
           <div className="grid sm:items-center">
-            <div className="mx-auto sm:scale-[120%] md:scale-[180%] lg:scale-[200%]">
-              <Image
-                className="rounded-full "
-                src={"/../public/images/man-1.jpg"}
-                alt="man"
-                width="180px"
-                height="180px"
-                // layout="responsive"
-                objectFit="cover"
-              />
+            <div className="mx-auto sm:scale-[100%] md:scale-[120%] lg:scale-[160%]">
+              {/* About Me Picture */}
+              <div className="w-[300px] h-[300px] bg-red-600 p-4 rounded-full">
+                <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                  <Profile
+                    profileImg={bank1}
+                    profileAlt={"bank1"}
+                    // className="rounded-full"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
